@@ -32,7 +32,7 @@ export let value = function(el) {
 
 
 export const getNames = () => {
-	return axios.get('http://127.0.0.1:8000/players')
+	return axios.get('https://djangoboiler.herokuapp.com/players')
 		.then(res => {
 			console.log(res.data)
 			return res.data
